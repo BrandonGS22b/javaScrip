@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <p>UTS-camilo de trabajo de segundo corte</p>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+    <title>el primer script</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{titulo}}</h1>
+   <input v-model="titulo">
+
+      <ul>
+     
+        <li v-for="equipos of equipos">{{ equipos }}</li>
+
+        ///////////////////////////////////////////////////////////
+      </br>
+      <h1>{{titulo}}</h1>
+      <li v-for="equipos of equipos">{{ equipos.nombre }}</li>
+      ///////////////////////////////////////////////////////////////
+    </br>
+    <h1>{{titulo}}</h1>
+    <input v-model="titulo">
+
+    <li v-for="equipos of equipos">{{ equipos.nombre }} - {{equipos.ciudad}}
+
+    </li>
+//////////////////////////////////////////////////////////////////////////////////77
+</br>
+<h1>{{titulo}}</h1>
+<input v-model="titulo">
+
+<li v-for="equipos of equipos">{{ equipos.nombre }} - {{equipos.ciudad}} - {{equipos.posicion}}
+
+</li>
+////////////////////////////////////////////////////
+</br>
+<h1>{{titulo}}</h1>
+<input v-model="titulo">
+
+<li v-for="equipos of equipos">{{ equipos.nombre }} - {{equipos.ciudad}} - {{equipos.posicion}}
+    <span v-if="equipos.posicion ===1">- campeon</span>
+    <span v-else>- Eliminados</span>
+
+</li>
+//////////////////////////////////////////////////////////////////////////////////
+
+</br>
+<h1>{{titulo}}</h1>
+<input v-model="NUEVOEQUIPO" v-on:Keyup.enter="Agregarequipo">
+<button v-on:click="Agregarequipo" >Guardar</button>
+<ul>
+
+<li v-for="equipos of equipos">{{ equipos.nombre }} - {{equipos.ciudad}} - {{equipos.posicion}}
+    <span v-if="equipos.posicion ===1">- campeon</span>
+    <span v-else>- Eliminados</span>
+
+</li>
+
+      </ul>
+////////////////////////////////////////////////////////////////////
+</br>
+<h1>{{titulo}}</h1>
+<input v-model="NUEVOEQUIPO" v-on:Keyup.enter="Agregarequipo">
+<button v-on:click="Agregarequipo" >Guardar</button>
+<ul>
+
+<li v-for="equipos of equipos">
+  {{ equipos.posicion }} - {{equipos.nombre}} -
+    <input type="number" v-model.number="equipos.puntos"> 
+    <span v-if="equipos.posicion ===1">- campeon</span>
+    <button v-on:click="equipos.puntos = equipos.puntos + 1">+</button>
+    <span v-else>- Eliminados</span>
+
+</li>
+      </ul>
+      <h4>TOTAL: {{sumarpuntos}}</h4>
+      
+    </div>
+ 
+  
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="objeto.js"></script>
+  </body>
+</html>
