@@ -28,4 +28,16 @@ console.log(persona.nombre+ " "+persona.apellido);
 
 console.log(persona.nombrecompleto());
 
-con
+
+
+    //otra forma de crear objetos 
+
+    let perosna2 = new Object();
+
+    perosna2.telefononombre="brandon";
+    perosna2.apellido="bueno";
+    perosna2.telefono="563737463";
+    perosna2.email="brandon@gmail.com";
+    perosna2.edad=25;
+
+    console.log(perosna2 );
