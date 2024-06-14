@@ -23,3 +23,13 @@ delete persona.telefono;
 delete persona.nombrecompleto;
 
 console.log(telefono);
+
+//lo podemos guardar en una array y lo podemos imprimir
+
+let = personaArray = Object.values(persona);
+console.log(personaArray);
+
+//otra forma de imprimir 
+
+let = personaString =JSON.stringify(persona);
+console.log(personaString);
