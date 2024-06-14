@@ -22,13 +22,21 @@ console.log(persona);
 // si quiero imprimir algun objeto que esta por dentro del objeto persona 
 
 
-console.log(persona.nombre+ " "+persona.apellido);
+console.log(persona.nombre);
+//otras forma de llamar al objeto 
+console.log(persona['apellido']);
 
 //lo siguiente que voy hacer es llamar el metodo que voy a llamar el nombre completo
 
 console.log(persona.nombrecompleto());
 
+for (nombrePropiedad in persona) {
 
+    console.log("nos tiene que arrojar toda la informacion"+nombrePropiedad);
+    console.log(persona[nombrePropiedad]);
+
+    
+}
 
     //otra forma de crear objetos 
 
