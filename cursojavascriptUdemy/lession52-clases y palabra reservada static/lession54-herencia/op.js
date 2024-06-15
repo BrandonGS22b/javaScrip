@@ -28,8 +28,17 @@ class Persona{
 
 
     }
+    //vamos a crear un metodo static
+    //luego vamos a heredarlo desde empleado
+    static saludar(){
+        console.log("hola brandon");
+    }
 
-}
+    static saludar2(persona) {
+        console.log(persona.nombre+" "+ persona.apellido);
+    }
+
+} 
 
 class empleado extends Persona {
 
@@ -69,7 +78,10 @@ let persona2 = new empleado ('brandon', 'garcia','desarrollo');
 //llamo al metodo de nombre completo ya que la clase empleado hereda ese metodo tambien
 console.log(persona2.nombrecompleto());//me devuelve ana lopez
 
- 
+ Persona.saludar();
+//aqui lo heredamos desde la clase empleado hereda ese metodo
+ empleado.saludar();
+ Persona.saludar2(persona2);
  
 
 
