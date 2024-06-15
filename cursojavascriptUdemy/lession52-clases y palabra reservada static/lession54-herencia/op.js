@@ -1,6 +1,9 @@
 class Persona{
     //clase statica
     static contador = 0;
+    //el stactic se solicita directo mediante la clase statica
+    email = "mi correo actual";
+    //mientras este atributo email tenemos que llamarlo atraves de un objeto
 
     constructor(nombre,apellido){
         this.nombre = nombre;
@@ -71,9 +74,12 @@ nombrecompleto(){
 
 
 };
-
+//objero de la clase padre
 let persona2 = new empleado ('brandon', 'garcia','desarrollo');
 
+//variable email o atributo email que esta en la linea 5
+
+console.log(persona2.email);
 
 //console.log(persona2.apellido);
 //console.log(persona2.departamento); 
