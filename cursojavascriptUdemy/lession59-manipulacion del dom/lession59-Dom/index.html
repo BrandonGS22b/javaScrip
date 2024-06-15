@@ -14,8 +14,11 @@
 
 
     <script >
-        let cabecera= document.getElementById("cabecera").innerHTML;
-        console.log(cabecera);
+        let cabecera= document.getElementById("cabecera");
+        //mediante lo siguiente podems cambar el h1 de la cabecera
+        cabecera.innerHTML="el nuevovalor ejemplo dom con javascript";
+
+        console.log(cabecera.innerHTML);
 
         let parrafo= document.getElementById("parrafo").innerHTML;
         console.log(parrafo);
