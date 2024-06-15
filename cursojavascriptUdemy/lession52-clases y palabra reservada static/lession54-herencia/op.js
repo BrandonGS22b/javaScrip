@@ -1,4 +1,7 @@
 class Persona{
+    //clase statica
+    static contador = 0;
+
     constructor(nombre,apellido){
         this.nombre = nombre;
         this.apellido = apellido;
@@ -82,6 +85,8 @@ console.log(persona2.nombrecompleto());//me devuelve ana lopez
 //aqui lo heredamos desde la clase empleado hereda ese metodo
  empleado.saludar();
  Persona.saludar2(persona2);
+
+ console.log( Persona.contador);
  
 
 
