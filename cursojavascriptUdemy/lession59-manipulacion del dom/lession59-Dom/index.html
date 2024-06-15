@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo dom con js</title>
+</head>
+<body>
+<!--  este atributo id es para identificar el elemento dentro del dom-->
+    <h1 id="cabecera">ejemplo con javascript</h1>
+
+<!-- lo mismo con parrafo-->
+    <p id = "parrafo">parrafo</p>
+
+
+    <script >
+        let cabecera= document.getElementById("cabecera").innerHTML;
+        console.log(cabecera);
+
+        let parrafo= document.getElementById("parrafo").innerHTML;
+        console.log(parrafo);
+
+
+    </script>
+</body>
+</html>
