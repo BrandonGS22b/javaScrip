@@ -5,7 +5,7 @@ class Persona{
     }
 
     get nombre(){
-        return this.nombre;
+        return this._nombre;
     }
 
     set nombre(nombre){
@@ -15,11 +15,18 @@ class Persona{
 
 
     get apellido(){
-        return this.apellido;
+        return this._apellido;
     }
 
     set apellido(apellido){
-        this.apellido = apellido;
+        this._apellido = apellido;
+    }
+
+    nombrecompleto(){
+
+        return this._nombre + " " + this._apellido;
+
+
     }
 
 }
@@ -40,6 +47,14 @@ set departamento( Departamento ){
      this._departamento = Departamento;
 
 }
+//sobreescritura toca tener en cuenta el super para llamarlo de la clase padre
+
+nombrecompleto(){
+
+    return super.nombrecompleto + " ," + this._departamento + " " + this._departamento;
+
+
+}
 
 
 
@@ -47,9 +62,13 @@ set departamento( Departamento ){
 
 let persona2 = new empleado ('brandon', 'garcia','desarrollo');
 
-console.log(persona2.nombre);
-console.log(persona2.apellido);
-console.log(persona2.departamento); 
+
+//console.log(persona2.apellido);
+//console.log(persona2.departamento); 
+
+//llamo al metodo de nombre completo ya que la clase empleado hereda ese metodo tambien
+console.log(persona2.nombrecompleto());//me devuelve ana lopez
+
  
  
 
