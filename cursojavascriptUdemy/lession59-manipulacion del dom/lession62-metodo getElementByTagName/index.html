@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo con js</title>
+</head>
+<body>
+
+    <p id="parrafo1">parrafo manipulacion del dom 1</p>
+    <p id="parrafo2">parrafo manipulacion del dom 2</p>
+    <p id="parrafo3">parrafo manipulacion del dom 3</p>
+
+<script> 
+    let parrafos = document.getElementById("p");
+    console.log(parrafos.length);
+
+    for( let i = 0; i < parrafos.length; i++){
+
+        console.log(parrafos[i].innerHTML);
+
+    }
+
+</script>
+
+<p class="rojo">parrafo manipulacion del dom 1</p>
+    <p class="rojo">parrafo manipulacion del dom 2</p>
+    <p class="rojo">parrafo manipulacion del dom 3</p>
+
+<script>
+// metodo getElementsByClassName
+    let parrafo = document.getElementsByClassName("rojo");
+    console.log(parrafo.length);
+
+    for( let i = 0; i < parrafos.length; i++){
+
+        console.log(parrafos[i].innerHTML);
+
+    }
+</script>
+
+
+<h1 class ="titulo"> titulo de la clase 63</h1>
+<p class="rojo">parrafo manipulacion del dom 1</p>
+    <p class="rojo">parrafo manipulacion del dom 2</p>
+    <p class="rojo">parrafo manipulacion del dom 3</p>
+
+<script> 
+//selector all  asi podemos sacar un contenido especifico mediante la clase
+    let parraf = document.querySelectorAll("h1.titulo");
+    console.log(parrafo.length);
+
+    for( let i = 0; i < parrafos.length; i++){
+
+        console.log(parrafos[i].innerHTML);
+
+    }
+
+
+
+
+</script>
+
+</body>
+</html>

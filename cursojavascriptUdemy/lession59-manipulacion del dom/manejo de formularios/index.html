@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+
+    <form id = "form" action>
+        nombre <input type="text" name="nombre" value="luis">
+        <br>
+
+        apellido <input type="text" name="apellido" value="perez">
+        <br>
+
+
+
+    </form>
+    <button onclick="mostrar">mostrar</button>
+
+<!-- este div es invicible cuando le demos en el boton nos va mostrar -->
+    <div id="valores" > </div>
+
+    <script>
+        	function mostrarValores(){
+                let formulario = document.form['formulario'];
+                let texto="";
+
+                for (let elemento of formulario) {
+
+                    texto +=elemento.value + '<br>';
+                }
+                document.getElementById('valores').innerHTML = texto ;
+
+            }
+
+
+
+
+
+    </script>
+</body>
+</html>
