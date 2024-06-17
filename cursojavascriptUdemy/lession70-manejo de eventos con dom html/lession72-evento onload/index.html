@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="myFunction()">
+    
+
+    <h1 id="titulo"> manejo del dom</h1>
+    <br>
+    <!-- mediante este div vamos a mostrar la respuesta que se esta guardando en texto  -->
+    <div id="mostrar"> </div>
+    <script>
+        function myFunction() {
+           
+            alert("has entrado ala paginado");
+            let texto ="";
+
+                //mediante ese navigator.cookies que es una función de javascript podemos saber si estan activas las cookies
+            if(navigator.cookieEnabled) {
+                texto ="las cookies estan activas";
+
+
+
+            }{
+                texto = "las cookies estan activas";
+
+
+            }
+            // la respues la vamos a mostrar con
+            document.getElementById("mostrar").innerHTML = texto;
+            console.log(texto);
+        
+
+
+        }
+    </script>
+
+
+
+
+    
+</body>
+</html>
