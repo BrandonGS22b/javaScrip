@@ -22,10 +22,10 @@
 
     <script>
         	function mostrarValores(){
-                let formulario = document.form['formulario'];
-                let texto="";
+                let formulario = document.form['formulario']; // Obtiene el formulario con el ID "form".
+                let texto=""; //Inicializa una cadena vacía para almacenar los valores.
 
-                for (let elemento of formulario) {
+                for (let elemento of formulario) { //Itera sobre los elementos del formulario.
 
                     texto +=elemento.value + '<br>';
                 }
