@@ -12,7 +12,8 @@ const fetchPosts = () => {
         }, 2000);
     });
 };
-
+/*
+console.log('inicia operaciones');
 fetchPosts()
     .then((posts) => {
         console.log(posts);
@@ -20,3 +21,18 @@ fetchPosts()
     .catch((error) => {
         console.log(error);
     });
+    console.log('termina operaciones');
+*/
+
+const mostrarPost = async() => {
+    try { 
+        const posts = await fetchPosts();
+        console.log(posts);
+
+    } catch (error) {
+        console.log(error);
+    }
+  
+
+};
+mostrarPost();
